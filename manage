@@ -1,0 +1,5 @@
+#!/bin/bash
+# Simple wrapper to call manage-handovers.sh from any directory
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+"$SCRIPT_DIR/scripts/manage-handovers.sh" "$@"
